@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="{'hide-menu': !isMenuVisible || !user}">
-    <Header title="IVC - Base de Conhecimento" :hideToggle="!user" :hideUserDropdown="!user"/>
+    <Header title="IVC - Base de Conhecimento." :hideToggle="!user" :hideUserDropdown="!user"/>
     <Menu v-if="user"/>
     <Loading v-if="validatingToken"/>
     <Content v-else/>
